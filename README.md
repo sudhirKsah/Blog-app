@@ -1,4 +1,5 @@
-# This is a Simple Blog App
+# Blog App
+This is a simple blog app.
 
 ## Features
 1. Anyone can read blogs
