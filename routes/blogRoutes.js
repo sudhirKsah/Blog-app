@@ -26,14 +26,10 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-// Middleware function to check authentication
 function requireAuth(req, res, next) {
-    // Check if user is authenticated
     if (!req.user) {
-        // If not authenticated, redirect to login page or display error message
-        return res.redirect('/user/login'); // Redirect to login page
+        return res.redirect('/user/login');
     }
-    // If authenticated, proceed to next middleware or route handler
     next();
 }
 
